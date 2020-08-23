@@ -29,5 +29,5 @@ package() {
   install -Dm644 ../chrome-eula_text.html "$pkgdir/usr/share/licenses/$pkgname/eula_text.html"
   install -Dm644 ../chrome-eula_text.html chromium.png "$pkgdir/usr/share/chromium-widevine/"
   install -Dm644 chromium-widevine.desktop "$pkgdir/usr/share/applications/"
-  install -Dm644 launch_chromium_widevine.sh "$pkgdir/usr/local/bin/"
+  install -Dm755 launch_chromium_widevine.sh "$pkgdir/usr/local/bin/"
 }
