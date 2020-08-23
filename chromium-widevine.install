@@ -1,3 +1,8 @@
+DEBIAN_VER=buster
+CONTAINER_DIR=/var/lib/machines/
+CONTAINER_ID=chromium_widevine
+TEMP_DIR="$(mktemp -p /var/cache/ -td ChromeOS-IMG.XXXXXX)"
+
 # message functions
 msg() {
   ALL_OFF="\e[1;0m"
@@ -16,11 +21,6 @@ info() {
 }
 
 post_install() {
-
-  DEBIAN_VER=buster
-  CONTAINER_DIR=/var/lib/machines/
-  CONTAINER_ID=chromium_widevine
-  TEMP_DIR="$(mktemp -p /var/cache/ -td ChromeOS-IMG.XXXXXX)"
 
   if [[ ! -d $CONTAINER_DIR ]]; then
     info "Creating base directory for systemd containers $CONTAINER_DIR..."
