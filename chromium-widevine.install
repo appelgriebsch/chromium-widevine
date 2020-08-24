@@ -65,7 +65,7 @@ post_install() {
     libxext6 libxfixes3 libxi6 libxinerama1 libxml2 libxrandr2 libxrender1 libxss1 libxtst6 shared-mime-info ucf \
     x11-common xdg-utils libpulse0 pulseaudio-utils wget libatk-bridge2.0-0 libatspi2.0-0 libgtk-3-0 \
     mesa-va-drivers mesa-vdpau-drivers mesa-utils libosmesa6 libegl1-mesa libwayland-egl1-mesa libgl1-mesa-dri \
-    libgles2-mesa libegl1 libgles2 v4l-utils
+    libgles2-mesa libegl1 libgles2 v4l-utils libva-glx2 libva-drm2
 
   apt install /tmp/chromium/dependencies/chromium*.deb
 
